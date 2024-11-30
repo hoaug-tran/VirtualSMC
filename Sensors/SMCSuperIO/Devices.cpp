@@ -586,24 +586,6 @@ private:
 
 };
 
-class Device_0x8390 final : public GeneratedITEDevice_5 {
-public:
-	static SuperIODevice *createDevice(uint16_t deviceId) {
-		if (deviceId == 0x8390)
-			return new Device_0x8390();
-		return nullptr;
-	}
-
-	uint8_t getLdn() override {
-		return 0x04;
-	}
-
-	const char* getModelName() override {
-		return "ITE IT8390E";
-	}
-
-};
-
 class Device_0x8705 final : public GeneratedITEDevice_5 {
 public:
 	static SuperIODevice *createDevice(uint16_t deviceId) {
@@ -693,6 +675,24 @@ private:
 		"VIN7",
 		"VBAT",
 	};
+
+};
+
+class Device_0x8390 final : public GeneratedITEDevice_6 {
+public:
+	static SuperIODevice *createDevice(uint16_t deviceId) {
+		if (deviceId == 0x8390)
+			return new Device_0x8390();
+		return nullptr;
+	}
+
+	uint8_t getLdn() override {
+		return 0x04;
+	}
+
+	const char* getModelName() override {
+		return "ITE IT8390E";
+	}
 
 };
 
