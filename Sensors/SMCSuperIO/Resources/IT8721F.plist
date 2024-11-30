@@ -8,6 +8,12 @@
 	<array>
 		<dict>
 			<key>DisplayName</key>
+			<string>ITE IT8390E</string>
+			<key>DeviceID</key>
+			<integer>0x8390</integer>
+		</dict>
+		<dict>
+			<key>DisplayName</key>
 			<string>ITE IT8721F</string>
 			<key>DeviceID</key>
 			<integer>0x8721</integer>
